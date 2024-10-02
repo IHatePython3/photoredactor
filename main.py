@@ -1,10 +1,6 @@
 from PIL import Image
 
 image = Image.open("monro.jpg")
-print('Ширина -', image.width)
-print('Высота -', image.height)
-print('Цветовая модель - ', image.mode)
-
 red, green, blue = image.split()
 
 coordinates_red = (100,0, red.width, red.height)
